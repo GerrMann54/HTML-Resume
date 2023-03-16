@@ -1,0 +1,203 @@
+* { 
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    background-color: rgb(14, 14, 14);
+}
+
+.container {
+    margin: 80px auto;
+    min-height: 90vh;
+    background-color: white;
+    width: 1000px;
+    border: 1px solid white;
+    display: flex;
+}
+
+.sidebar {
+    background-color: rgb(46, 46, 46);
+    color: white;
+    width: 250px;
+    /* border-right: 2px solid black; */
+}
+
+.main-info {
+    width: 250px;
+    min-height: 100px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    justify-items: center;
+    align-items: center;
+}
+
+.main-info .photo-container {
+    width: 230px;
+    height: 230px;
+    margin: 20px 0;
+    /* overflow: hidden; */
+}
+
+.main-info .photo-container img {
+    display: block;
+    box-sizing: border-box;
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    border: 3px solid white;
+    object-fit: cover;
+    object-position: center;
+}
+
+.main-info .photo-container::after {
+    display: block;
+    content: "";
+    height: 3px;
+    width: 100px;
+    background-color: white;
+    margin: 20px auto;
+}
+
+.main-info .contact-container {
+    width: 100%;
+    margin: 20px 0;
+}
+
+.main-info .contact-container ul li {
+    font-weight: bold;
+    list-style: none;
+    font-size: 16px;
+    line-height: 20px;
+    margin: 8px;
+    text-align: center;
+}
+
+.main-info .contact-container ul li a {
+    color: white;
+    text-decoration: none;
+}
+
+.main-info .address {
+    /* margin-top: 10px; */
+    text-align: center;
+    font-size: 16px;
+    font-style: italic;
+}
+
+.detail-info {
+    width: 250px;
+    min-height: 100px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    justify-items: center;
+    align-items: center;
+}
+
+.detail-info .list-container {
+    width: 100%;
+    min-height: 100px;
+    /* margin: 15px; */
+}
+
+.detail-info .list-container h2 {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 28px;
+    line-height: 40px;
+    margin-left: 20px;
+
+}
+
+.detail-info .list-container ul li{
+    margin-left: 40px;
+    margin-right: 10px;
+    margin-bottom: 5px;
+    margin-top: 5px;
+    list-style: "-  ";
+    font-size: 16px;
+    line-height: 18px;
+
+}
+
+.all-info {
+    padding: 0 40px;
+    width: 750px;
+}
+
+.all-info header {
+    padding-top: 30px;
+    width: 100%;    
+}
+
+.all-info header h1 {
+   font-size: 40px;
+   line-height: 40px;
+   text-align: center;
+   font-family: Georgia, 'Times New Roman', Times, serif;
+   padding: 20px 0;
+}
+
+.all-info header h2 {
+    font-size: 36px;
+    line-height: 40px;
+    text-align: center;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    text-transform: uppercase;
+    padding: 20px 0;
+}
+
+.all-info header h2::after {
+    position: relative;
+    top: -10px;
+    right: -5px;
+    content: "";
+    display: inline-block;
+    background-color: black;
+    height: 3px;
+    width: 100px;
+}
+
+.all-info header h2::before {
+    position: relative;
+    top: -10px;
+    right: 5px;
+    content: "";
+    display: inline-block;
+    background-color: black;
+    height: 3px;
+    width: 100px;
+}
+
+.all-info content {
+    width: 100%;
+}
+
+.all-info article section h2 {
+    text-transform: uppercase;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    text-align: left;
+    font-size: 24px;
+    margin-left: 25px;
+    margin-top: 40px;
+}
+
+.all-info article section p {
+    font-size: 16px;
+    margin-left: 0;
+    margin-top: 12px;
+}
+
+.all-info article {
+    margin-bottom: 40px;
+}
+
+.mt30 {
+    margin-top: 30px !important; 
+}
+
+.mt0 {
+    margin-top: 0 !important;
+}
